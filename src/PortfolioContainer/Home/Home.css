@@ -1,0 +1,14 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 50vh !important; */
+    min-height: 400px;
+    background-color:black;
+}
+
+@media (max-width:820px) {
+    .home-container {
+        min-height: 330px;
+    }
+}
