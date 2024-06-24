@@ -15,15 +15,15 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTANTS = {
     description:
-      "Front End Developer and mobile developer with background knowledge of Vanilla Javascript, along with a knack of building applications with utmost efficiency. Strong professional with an HND willing to be an asset for an organization.",
+      "Front End Developer with Strong background knowledge of Vanilla Javascript, along with a knack of building applications with utmost efficiency. Strong professional skills willing to be an asset for your organization.",
     highlights: {
       bullets: [
-        "Front End Developer and mobile development",
+        "Front End Developer",
         "Interactive Front End as per the design",
         "React and Vanilla Javascript",
         "CSS and Advanced UI",
-        "Building REST API",
-        "Managing database",
+        "Next Js Applications",
+        "TypeScript",
       ],
       heading: "Here are a Few Highlights:",
     },

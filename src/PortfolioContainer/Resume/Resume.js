@@ -57,36 +57,36 @@ export default function Resume(props) {
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
-    { skill: "WordPress", ratingPercentage: 85 },
-    { skill: "Search Engine OP(SEO)", ratingPercentage: 89 },
-    { skill: "Advanced React", ratingPercentage: 89 },
+    { skill: "Next Js", ratingPercentage: 85 },
+    { skill: "TypeScript", ratingPercentage: 89 },
     { skill: "Amateur PHP", ratingPercentage: 70 },
     { skill: "Core JavaScript", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
+    { skill: "Tailwind CSS)", ratingPercentage: 89 },
     { skill: "CSS", ratingPercentage: 80 },
   ];
 
   const projectsDetails = [
     {
       title: "Personal Portfolio Website",
-      duration: { fromDate: "2022", toDate: "2023" },
+      duration: { fromDate: "2021", toDate: "2021" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
       subHeading: "Technologies Used: React JS, Bootsrap",
     },
     {
-      title: "Restaurant site ",
-      duration: { fromDate: "2022", toDate: "2023" },
+      title: "Eze Website ",
+      duration: { fromDate: "2023", toDate: "2024" },
       description:
-        "An ecommerce application designed to sell products online",
-      subHeading: "Technologies Used:  WordPress, Templates",
+        "A Online research website were student and teachers can research and Study",
+      subHeading: "Technologies Used:  Next Js, Auth0, Node js",
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2022", toDate: "2023" },
+      title: "ANTD",
+      duration: { fromDate: "2023", toDate: "2024" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration",
-      subHeading: "Technologies Used: HTML, CSS, React Js, Bootstrap.",
+        "Online Racist website, You Can report if you were ever asulted or treated different in a way that makes you unequal to others",
+      subHeading: "Technologies Used: Next js, node js, tailwind, typescript.",
     },
   ];
 
@@ -120,30 +120,29 @@ export default function Resume(props) {
       <div className="experience-container">
         <ResumeHeading
           heading={"DURAN'S Technoloy"}
-          subHeading={"FRONT END DEVELOPER INTERN"}
+          subHeading={"FRONT END DEVELOPER"}
           fromDate={"2021"}
-          toDate={"Present"}
+          toDate={"2024"}
         />
         <div className="experience-description">
-          <span className="resume-description-text">
-            Currently Freelancing, building websites and Maximising SEO for
-            Websites
+          <span className="resume-description-text0">
+            Front End Developer 2021-2023 <a href="https://nobisoft.net/" target="_black">NOBISOFT</a>
+          </span> <br />
+          <span className="resume-description-text0">
+            Front End Developer 2023-2024 <a href="https://kaeyros-analytics.com/#/" target="_black">kaeyros-Analytics</a>
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing likes, users, payment etc...
+            - Built a research PlatForm where Students, Teachers, and reasearchers can research different moudules linked through Auth0 using SSO
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+            - Built an application using whatsApp Api, with a Chat Session. Users can create scenarios, see transaction history and Create Templates.
           </span>
           <br />
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - Built an application to send airtime to different Countries
           </span>
           <br />
         </div>

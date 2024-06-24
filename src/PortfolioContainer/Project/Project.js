@@ -24,6 +24,10 @@ import groceryBud from "../../../src/Img/Testimonial/groceryBud.png";
 import cart from "../../../src/Img/Testimonial/cart.png";
 import birthdayReminder from "../../../src/Img/Testimonial/birthdayReminder.png";
 import menu from "../../../src/Img/Testimonial/Menu.png";
+import Eze from '../../../src/Img/Testimonial/eze.png';
+import miq from '../../../src/Img/Testimonial/dina.png';
+import sema01 from '../../../src/Img/Testimonial/sema.png';
+import sema02 from '../../../src/Img/Testimonial/sema02.png';
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
@@ -41,7 +45,7 @@ export default function Testimonial(props) {
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     smartSpeed: 1000,
     responsive: {
       0: {
@@ -68,7 +72,39 @@ export default function Testimonial(props) {
               id="testimonial-carousel"
               {...options}
             >
-              <div className="card" style={{ width: "18rem" }}>
+
+              {/* <div className="slide-container"> */}
+              <a className="card" href="https://www.kaeyros.org/" target="_blank">
+                <img
+                  className="card-img-top"
+                  src={miq}
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">MiQ</h5>
+                </div>
+              </a>
+              <a className="card" href="https://dba-frontend-six.vercel.app/en/" target="_bank">
+                <img
+                  className="card-img-top"
+                  src={sema01}
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">SEMA</h5>
+                </div>
+              </a>
+              <a className="card" href="https://eze.ink/" target="_blank">
+                <img
+                  className="card-img-top"
+                  src={Eze}
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Eze</h5>
+                </div>
+              </a>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={cocktail}
@@ -80,12 +116,11 @@ export default function Testimonial(props) {
                     This displays various drinks type and give details of Each
                     drink
                   </p>
-                  <span className="view">
+                  {/* <span className="view">
                     <a target="_blank" href="https://duranscocktail.netlify.app/">
                       <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
                     </a>
-                  </span>
+                  </span> */}
                   <span className="view">
                     <a target="_blank" href="https://github.com/mengotduran/cocktail">
                       <h5 className="source-code">Source Code</h5>
@@ -93,8 +128,7 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={colorgen}
@@ -118,8 +152,7 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={accordation}
@@ -143,7 +176,7 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={tour}
@@ -167,7 +200,7 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={textGen}
@@ -191,7 +224,7 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={tabs}
@@ -215,7 +248,7 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={stripe}
@@ -239,7 +272,7 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={sidebar}
@@ -263,7 +296,7 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={reviews}
@@ -287,150 +320,6 @@ export default function Testimonial(props) {
                   </span>
                 </div>
               </div>
-              <div className="card" style={{ width: "18rem" }}>
-                <img
-                  className="card-img-top"
-                  src={netlify}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">netlify</h5>
-                  <p className="card-text">
-                    dynaic slide display 
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duransslider.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/react-slider">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div className="card" style={{ width: "18rem" }}>
-                <img
-                  className="card-img-top"
-                  src={navbar}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">navbar</h5>
-                  <p className="card-text">
-                    navbar display 
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duransnavbar.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/navbar">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div className="card" style={{ width: "18rem" }}>
-                <img
-                  className="card-img-top"
-                  src={groceryBud}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">groceryBud</h5>
-                  <p className="card-text">
-                    Items can be added, deleted and edited 
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duransgrocerybud.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/grocerybud">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div className="card" style={{ width: "18rem" }}>
-                <img
-                  className="card-img-top"
-                  src={cart}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">cart</h5>
-                  <p className="card-text">
-                    You can add and delete items. It also displays the total amount on item in $ on cart 
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duranscart.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/Cart">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div className="card" style={{ width: "18rem" }}>
-                <img
-                  className="card-img-top"
-                  src={birthdayReminder}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">birthdayReminder</h5>
-                  <p className="card-text">
-                    Simple birthdayReminder  
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duransbirthdayreminder.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/BirthdayReminder">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div className="card" style={{ width: "18rem" }}>
-                <img
-                  className="card-img-top"
-                  src={menu}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">menu</h5>
-                  <p className="card-text">
-                    various food types, prices and some basic informtion  
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duransmenu.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/react-menu">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
-              </div>
             </OwlCarousel>
           </div>
         </div>
@@ -441,3 +330,151 @@ export default function Testimonial(props) {
     </div>
   );
 }
+
+
+
+// {/* <div className="card">
+// <img
+//   className="card-img-top"
+//   src={netlify}
+//   alt="Card image cap"
+// />
+// <div className="card-body">
+//   <h5 className="card-title">netlify</h5>
+//   <p className="card-text">
+//     dynaic slide display 
+//   </p>
+//   <span href="#" className="view">
+//     <a target="_blank" href="https://duransslider.netlify.app/">
+//       <h5 className="website">View Website</h5>
+//         {/* <BiWorld className="logo" /> */}
+//     </a>
+//   </span>
+//   <span className="view">
+//     <a target="_blank" href="https://github.com/mengotduran/react-slider">
+//       <h5 className="source-code">Source Code</h5>
+//     </a>
+//   </span>
+// </div>
+// </div>
+// <div className="card">
+// <img
+//   className="card-img-top"
+//   src={navbar}
+//   alt="Card image cap"
+// />
+// <div className="card-body">
+//   <h5 className="card-title">navbar</h5>
+//   <p className="card-text">
+//     navbar display 
+//   </p>
+//   <span href="#" className="view">
+//     <a target="_blank" href="https://duransnavbar.netlify.app/">
+//       <h5 className="website">View Website</h5>
+//         {/* <BiWorld className="logo" /> */}
+//     </a>
+//   </span>
+//   <span className="view">
+//     <a target="_blank" href="https://github.com/mengotduran/navbar">
+//       <h5 className="source-code">Source Code</h5>
+//     </a>
+//   </span>
+// </div>
+// </div>
+// <div className="card">
+// <img
+//   className="card-img-top"
+//   src={groceryBud}
+//   alt="Card image cap"
+// />
+// <div className="card-body">
+//   <h5 className="card-title">groceryBud</h5>
+//   <p className="card-text">
+//     Items can be added, deleted and edited 
+//   </p>
+//   <span href="#" className="view">
+//     <a target="_blank" href="https://duransgrocerybud.netlify.app/">
+//       <h5 className="website">View Website</h5>
+//         {/* <BiWorld className="logo" /> */}
+//     </a>
+//   </span>
+//   <span className="view">
+//     <a target="_blank" href="https://github.com/mengotduran/grocerybud">
+//       <h5 className="source-code">Source Code</h5>
+//     </a>
+//   </span>
+// </div>
+// </div>
+// <div className="card">
+// <img
+//   className="card-img-top"
+//   src={cart}
+//   alt="Card image cap"
+// />
+// <div className="card-body">
+//   <h5 className="card-title">cart</h5>
+//   <p className="card-text">
+//     You can add and delete items. It also displays the total amount on item in $ on cart 
+//   </p>
+//   <span href="#" className="view">
+//     <a target="_blank" href="https://duranscart.netlify.app/">
+//       <h5 className="website">View Website</h5>
+//         {/* <BiWorld className="logo" /> */}
+//     </a>
+//   </span>
+//   <span className="view">
+//     <a target="_blank" href="https://github.com/mengotduran/Cart">
+//       <h5 className="source-code">Source Code</h5>
+//     </a>
+//   </span>
+// </div>
+// </div>
+// <div className="card">
+// <img
+//   className="card-img-top"
+//   src={birthdayReminder}
+//   alt="Card image cap"
+// />
+// <div className="card-body">
+//   <h5 className="card-title">birthdayReminder</h5>
+//   <p className="card-text">
+//     Simple birthdayReminder  
+//   </p>
+//   <span href="#" className="view">
+//     <a target="_blank" href="https://duransbirthdayreminder.netlify.app/">
+//       <h5 className="website">View Website</h5>
+//         {/* <BiWorld className="logo" /> */}
+//     </a>
+//   </span>
+//   <span className="view">
+//     <a target="_blank" href="https://github.com/mengotduran/BirthdayReminder">
+//       <h5 className="source-code">Source Code</h5>
+//     </a>
+//   </span>
+// </div>
+// </div>
+// <div className="card">
+// <img
+//   className="card-img-top"
+//   src={menu}
+//   alt="Card image cap"
+// />
+// <div className="card-body">
+//   <h5 className="card-title">menu</h5>
+//   <p className="card-text">
+//     various food types, prices and some basic informtion  
+//   </p>
+//   <span href="#" className="view">
+//     <a target="_blank" href="https://duransmenu.netlify.app/">
+//       <h5 className="website">View Website</h5>
+//         {/* <BiWorld className="logo" /> */}
+//     </a>
+//   </span>
+//   <span className="view">
+//     <a target="_blank" href="https://github.com/mengotduran/react-menu">
+//       <h5 className="source-code">Source Code</h5>
+//     </a>
+//   </span>
+// </div>
+// {/* </div> */}
+// </div> */}

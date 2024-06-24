@@ -55,7 +55,9 @@
 
 .selected-header-option {
     /* color: #ff5823; */
-    background-color: orangered;
+    /* background-color: orangered; */
+    color: #ff5823;
+    /* border: 2px solid yellow; */
 }
 
 @media(max-width: 1110px) {

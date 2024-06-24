@@ -32,6 +32,11 @@
     text-align: justify;
   }
   
+  .resume-description-text0 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
   .resume-description-text {
     font-size: 12px;
   }
