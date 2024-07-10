@@ -7,15 +7,17 @@ import imgBack from "../../../src/images/mailz.jpeg";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
+import toast, {Toaster} from "react-hot-toast";
 
 const Result = () => {
   return (
-    <p> Your Message Has been successfully sent. I will contact you soon</p>
+    <p class="msg-status"> Your Message Has been successfully sent. I will contact you soon</p>
   )
 }
 
 export default function ContactMe(props) {
   const form = useRef();
+  const [loading, setLoading] = useState(false)
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
@@ -23,22 +25,60 @@ export default function ContactMe(props) {
 
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-
   const [result, showResult] = useState(false);
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+
+  //   const serviceId = 'service_zpmw66h';
+  //   const templateId = 'template_u2ayfxa';
+  //   const publicKey = 'RH8v6llJe5ihhMrv6'
+  
+  //   const templateParams = {
+  //     from_name: name,
+  //     from_email:email,
+  //     to_name:'Mengot Duran',
+  //     message:message
+  //   }
+
+  //   emailjs.send(serviceId, templateId, templateParams, publicKey)
+  //   .then((response) => {
+  //       setName('')
+  //       setEmail('')
+  //       setMessage('')
+  //       console.log('Email was sent successfuly', response)
+  //   }).catch((error) => {
+  //     console.log('Error Sending Email', error)
+  //   })
+  // }
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_9pu0a9i', 'template_u2ayfxa', form.current, '_2HVfqxDRA1Mkp4e_')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    setLoading(true)
+
+    emailjs
+      .sendForm('service_zpmw66h', 'template_u2ayfxa', form.current, 'RH8v6llJe5ihhMrv6')
+      .then(
+        (response) => {
+          toast.success('Message Sent Successfully')
+          setLoading(false)
+          console.log('SUCCESS!', response);
+        },
+        (error) => {
+          toast.error('Please Check your connection and try again')
+          setLoading(false)
+          console.log('FAILED...', error.text);
+          console.log('FAILED..., message not sent');
+        },
+      );
       e.target.reset();
       showResult(true);
   };
 
+
   return (
     <div className="main-container" id={props.id || ""}>
+      <Toaster />
       <ScreenHeading subHeading={"Lets Keep In Touch"} title={"Contact Me"} />
       <div className="central-form">
         <div className="col">
@@ -65,20 +105,18 @@ export default function ContactMe(props) {
           </div>
           <form ref={form} onSubmit={sendEmail}>
             <label>Name</label>
-            <input type="text" name="fullName" required/>
+            <input type="text" name="user_name" required />
 
             <label>Email</label>
-            <input type="email" name="email" required/>
+            <input type="email" name="user_email" required/>
 
             <label>Message</label>
-            <textarea type="text" name="message" required/>
+            <textarea type="text" name="message" required />
 
-            <div className="send-btn">
-              <button>
-                Submit
-              </button>
-            </div>
-            <div className="row">{ result ? <Result /> : null}</div>
+            {/* <div className="send-btn">
+              <input type="submit" value="Send" />
+            </div> */}
+            <button disabled={loading ? true : false} type="send" className={loading ? 'disabled' : 'send-btn'}>{loading ? 'Loading...' : 'Send'}</button>
           </form>
         </div>
       </div>

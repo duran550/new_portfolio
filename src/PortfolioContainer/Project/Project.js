@@ -74,7 +74,7 @@ export default function Testimonial(props) {
             >
 
               {/* <div className="slide-container"> */}
-              <a className="card" href="https://www.kaeyros.org/" target="_blank">
+              <a className="card" href="https://www.kaeyros.org/de" target="_blank" id="miq">
                 <img
                   className="card-img-top"
                   src={miq}
@@ -84,7 +84,7 @@ export default function Testimonial(props) {
                   <h5 className="card-title">MiQ</h5>
                 </div>
               </a>
-              <a className="card" href="https://dba-frontend-six.vercel.app/en/" target="_bank">
+              <a className="card" href="https://sema.sem-a.com/y" target="_bank" id="dba">
                 <img
                   className="card-img-top"
                   src={sema01}
@@ -94,7 +94,7 @@ export default function Testimonial(props) {
                   <h5 className="card-title">SEMA</h5>
                 </div>
               </a>
-              <a className="card" href="https://eze.ink/" target="_blank">
+              <a className="card" href="https://eze.ink/" target="_blank" id="eze">
                 <img
                   className="card-img-top"
                   src={Eze}
@@ -104,222 +104,198 @@ export default function Testimonial(props) {
                   <h5 className="card-title">Eze</h5>
                 </div>
               </a>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={cocktail}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">CockTails</h5>
-                  <p className="card-text">
-                    This displays various drinks type and give details of Each
-                    drink
-                  </p>
-                  {/* <span className="view">
-                    <a target="_blank" href="https://duranscocktail.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                    </a>
-                  </span> */}
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/cocktail">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+              <div>
+                <a className="card" target="_blank" href="https://duranscocktail.netlify.app/" id="cocktail">
+                  <img
+                    className="card-img-top"
+                    src={cocktail}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">CockTails</h5>
+                    <p className="card-text">
+                      This displays various drinks type and give details of Each
+                      drink
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/cocktail">
+                    <h5 className="website">Source Code</h5>
+                  </a>
+                </span>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={colorgen}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">colorGen</h5>
-                  <p className="card-text">
-                    You can search, copy and paste colors from here
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duranscolorgen.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/color-generator">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+
+              <div>
+                <a className="card" target="_blank" href="https://duranscolorgen.netlify.app/" id="colorgen">
+                  <img
+                    className="card-img-top"
+                    src={colorgen}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">colorGen</h5>
+                    <p className="card-text">
+                      You can search, copy and paste colors from here
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/color-generator">
+                    <h5 className="source-code">Source Code</h5>
+                  </a>
+                </span>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={accordation}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">accordation</h5>
-                  <p className="card-text">
-                    This gives you an option to see or hide text
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duransaccordation.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/accordation">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+              <div>
+                <a className="card" target="_blank" href="https://duransaccordation.netlify.app/" id="accordation">
+                  <img
+                    className="card-img-top"
+                    src={accordation}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">accordation</h5>
+                    <p className="card-text">
+                      This gives you an option to see or hide text
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/accordation">
+                    <h5 className="source-code">Source Code</h5>
+                  </a>
+                </span>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={tour}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">tour</h5>
-                  <p className="card-text">
-                    nice tours images and info
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duranstour.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/Tours">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+              <div>
+                <a className="card" target="_blank" href="https://duranstour.netlify.app/" id="tour">
+                  <img
+                    className="card-img-top"
+                    src={tour}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">tour</h5>
+                    <p className="card-text">
+                      nice tours images and info
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/Tours">
+                    <h5 className="source-code">Source Code</h5>
+                  </a>
+                </span>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={textGen}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">textGen</h5>
-                  <p className="card-text">
-                    Generate Text
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duranstextgen.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/text-generator">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+              <div>
+                <a className="card" target="_blank" href="https://duranstextgen.netlify.app/" id="textGen">
+                  <img
+                    className="card-img-top"
+                    src={textGen}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">textGen</h5>
+                    <p className="card-text">
+                      Generate Text
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/text-generator">
+                    <h5 className="source-code">Source Code</h5>
+                  </a>
+                </span>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={tabs}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">tabs</h5>
-                  <p className="card-text">
-                    Generate Text
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://durantabs.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/react-tabs">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+              <div>
+                <a className="card" target="_blank" href="https://durantabs.netlify.app/" id="tabs">
+                  <img
+                    className="card-img-top"
+                    src={tabs}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">tabs</h5>
+                    <p className="card-text">
+                      Generate Text
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/react-tabs">
+                    <h5 className="source-code">Source Code</h5>
+                  </a>
+                </span>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={stripe}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">stripe</h5>
-                  <p className="card-text">
-                    stripe landing page clone
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duranstripemenu.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="hhttps://github.com/mengotduran/stripeMenu">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+              <div>
+                <a className="card" target="_blank" href="https://duranstripemenu.netlify.app/" id="stripe">
+                  <img
+                    className="card-img-top"
+                    src={stripe}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">stripe</h5>
+                    <p className="card-text">
+                      stripe landing page clone
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/stripeMenu">
+                    <h5 className="source-code">Source Code</h5>
+                  </a>
+                </span>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={sidebar}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">sidebar</h5>
-                  <p className="card-text">
-                    displays modal and side bar
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duransidebar.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/sidebar-modal">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+              <div>
+                <a className="card" target="_blank" href="https://duransidebar.netlify.app/" id="sidebar">
+                  <img
+                    className="card-img-top"
+                    src={sidebar}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">sidebar</h5>
+                    <p className="card-text">
+                      displays modal and side bar
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/sidebar-modal">
+                    <h5 className="source-code">Source Code</h5>
+                  </a>
+                </span>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={reviews}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">reviews</h5>
-                  <p className="card-text">
-                    static slide display of people
-                  </p>
-                  <span href="#" className="view">
-                    <a target="_blank" href="https://duranreviews.netlify.app/">
-                      <h5 className="website">View Website</h5>
-                        {/* <BiWorld className="logo" /> */}
-                    </a>
-                  </span>
-                  <span className="view">
-                    <a target="_blank" href="https://github.com/mengotduran/reviews.react">
-                      <h5 className="source-code">Source Code</h5>
-                    </a>
-                  </span>
-                </div>
+
+              <div>
+                <a className="card" target="_blank" href="https://duranreviews.netlify.app/" id="reviews">
+                  <img
+                    className="card-img-top"
+                    src={reviews}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">reviews</h5>
+                    <p className="card-text">
+                      static slide display of people
+                    </p>
+                  </div>
+                </a>
+                <span className="view">
+                  <a target="_blank" href="https://github.com/mengotduran/reviews.react">
+                    <h5 className="source-code">Source Code</h5>
+                  </a>
+                </span>
               </div>
+
             </OwlCarousel>
           </div>
         </div>
