@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
-// import Animations from "../../utilities/Animations";
+import Animations from "../../utilities/Animations";
 import "./AboutMe.css";
 
 export default function AboutMe(props) {
-  // let fadeInScreenHandler = (screen) => {
-  //   if (screen.fadeInScreen !== props.id) return;
-  //   Animations.animations.fadeInScreen(props.id);
-  // };
+  let fadeInScreenHandler = (screen) => {
+    if (screen.fadeInScreen !== props.id) return;
+    Animations.animations.fadeInScreen(props.id);
+  };
 
-  // const fadeInSubscription =
-    // ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
     description:
