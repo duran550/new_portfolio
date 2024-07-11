@@ -7,7 +7,7 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Project.css";
-import { BiWorld, BiCode } from "react-icons/bi";
+// import { BiWorld, BiCode } from "react-icons/bi";
 import cocktail from "../../../src/Img/Testimonial/cocktail.png";
 import accordation from "../../../src/Img/Testimonial/accordation.png";
 import colorgen from "../../../src/Img/Testimonial/colorGen.png";
